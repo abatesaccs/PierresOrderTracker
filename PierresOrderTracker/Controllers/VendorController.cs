@@ -3,7 +3,7 @@ using PierresOrderTracker.Models;
 
 namespace PierresOrderTracker.Controllers
 {
-  public class HomeController : Controller
+  public class VendorController : Controller
   {
     [HttpGet("/")]
     public ActionResult Index()
