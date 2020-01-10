@@ -1,0 +1,10 @@
+@using PierresOrderTracker.Models;
+@* @using System.Collections.Generic; *@
+
+<h4>Orders: </h4>
+
+<p>@Model["orders"].Description</p>
+<h4>Vendor: @Model["vendor"].Name</h4>
+
+<a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a>
+<a href='/vendors'>View all vendors</a>

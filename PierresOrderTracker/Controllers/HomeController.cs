@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using PierresOrderTracker.Models;
 
 namespace PierresOrderTracker.Controllers
 {
