@@ -10,7 +10,7 @@ namespace PierresOrderTracker.Models
     public int Id { get; }
     private static List<Order> _instances = new List<Order> { };
 
-    public Order(string description, string name, int cost)
+    public Order(string name, string description, int cost)
     {
       Description = description;
       Name = name;
