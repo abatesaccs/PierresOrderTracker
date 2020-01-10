@@ -19,7 +19,7 @@ namespace PierresOrderTracker.Controllers
         Order order = Order.Find(orderId);
         Vendor vendor = Vendor.Find(vendorId);
         Dictionary<string, object> model = new Dictionary<string, object>();
-        model.Add("order", order);
+        model.Add("orders", order);
         model.Add("vendor", vendor);
         return View(model);
     }
