@@ -7,14 +7,16 @@ namespace PierresOrderTracker.Models
     public string Name { get; set; }
     public int Cost { get; set; }
     public string Description { get; set; }
+    public string Date { get; set; }
     public int Id { get; }
     private static List<Order> _instances = new List<Order> { };
 
-    public Order(string name, string description, int cost)
+    public Order(string name, string description, int cost, string date)
     {
       Description = description;
       Name = name;
       Cost = cost;
+      Date = date;
       _instances.Add(this);
       Id = _instances.Count;
     }
