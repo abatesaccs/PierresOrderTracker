@@ -11,9 +11,10 @@ namespace PierresOrderTracker.Models
     public List<Order> Orders { get; set; }
   
 
-    public Vendor(string vendorName)
+    public Vendor(string vendorName, string vendorDescription)
     {
         Name = vendorName;
+        Description = vendorDescription;
         _instances.Add(this);
         Id = _instances.Count;
         Orders = new List<Order>{};
