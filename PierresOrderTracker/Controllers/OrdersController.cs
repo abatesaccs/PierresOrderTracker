@@ -24,6 +24,12 @@ namespace PierresOrderTracker.Controllers
         return View(model);
     }
 
-    
+    // [HttpPatch("/vendors/{vendorId}/orders/{orderId}/edit")]
+    // public ActionResult Update(int orderId)
+    // {
+    //   Order order = Order.Find(orderId);
+    //   order.Paid = "Paid";
+    //   return RedirectToAction("Show");
+    // }
   }
 }

@@ -26,11 +26,11 @@ namespace PierresOrderTracker.Controllers
         return RedirectToAction("Index");
     }
 
-    [HttpGet("/vendors/{id}")]
-    public ActionResult Show(int id)
+    [HttpGet("/vendors/{vendorId}")]
+    public ActionResult Show(int vendorId)
     {
         Dictionary<string, object> model = new Dictionary<string, object>();
-        Vendor selectedVendor = Vendor.Find(id);
+        Vendor selectedVendor = Vendor.Find(vendorId);
         List<Order> vendorOrders = selectedVendor.Orders;
         model.Add("vendor", selectedVendor);
         model.Add("orders", vendorOrders);
@@ -49,5 +49,13 @@ namespace PierresOrderTracker.Controllers
       model.Add("vendor", foundVendor);
       return View("Show", model);
     }
+
+    // [HttpPatch("/vendors/{vendorId}/orders/{orderId}/edit")]
+    // public ActionResult Update(int orderId)
+    // {
+    //   Order order = Order.Find(orderId);
+    //   order.Paid = "Paid";
+    //   return RedirectToAction("Show");
+    // }
   }
 }
