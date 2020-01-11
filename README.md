@@ -47,4 +47,6 @@ Github - https://github.com/PierresOrderTracker
 * ASP.NET Core
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+MIT License
+
+Copyright (c) 2020 Andrew Bates
