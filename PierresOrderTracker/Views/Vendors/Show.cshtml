@@ -1,6 +1,6 @@
 @using PierresOrderTracker.Models;
 
-<h3>@Model["vendor"]'s Orders:</h3>
+<h3>@Model["vendor"].Name Orders:</h3>
 
 <ol>
 @foreach (Order order in @Model["orders"])
